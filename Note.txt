@@ -1,0 +1,27 @@
+html
+js
+=> jsx
+
+
+======Buổi===== 1:
+Component : 
+- staeful compoment : class
+ - stateless Component: function
+
+ ======Buổi 2======:
+ -install BS4
+ - Rendering Elements
+ - hangdling events
+ - state: Nếu như state thay đổi thì compoment sẽ render lại    
+ - List keys
+
+ ======Buổi 3======:
+ * Comunication
+ - Props: truyen compoment tu cha sang con
+ - Lifting State Up: truyen data tu component con sang cha
+
+  ======Buổi 4======:
+ - Shopping cart
+ - Usermanagement
+ 
+
