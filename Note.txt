@@ -23,5 +23,17 @@ Component :
   ======Buổi 4======:
  - Shopping cart
  - Usermanagement
+  ======Buổi 5======:
+ - Usermanagement
+ - Form
+
+ ======Buổi 6======:
+ - Usermanagement
+ - Redux: tạo store để hạn truyền qua nhiều cấp độ component
+
+ ======Buổi 7======:
+ - Redux
  
+
+
 

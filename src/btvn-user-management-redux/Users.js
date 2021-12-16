@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import UserItem from "./UserItem";
+import {connect} from "react-redux"
+
 
 class Users extends Component {
   renderListUser =()=>{
-    const {listUser} = this.props;
-    return listUser.map((user)=>{
-      return <UserItem key = {user.id} user={user} getUserDelete={this.props.getUserDelete} getUserEdit={this.props.getUserEdit}/>
+    let {listUser,keyword} = this.props;
+    listUser = listUser.filter((user) => {
+      return user.fullname.toLowerCase().indexOf(keyword.toLowerCase()) !== -1
+    });
+    return listUser?.map((user)=>{
+      return <UserItem 
+      key = {user.id} 
+      user={user} 
+      // getUserDelete={this.props.getUserDelete} 
+      // getUserEdit={this.props.getUserEdit}
+      />
     })
   }
   render() {
@@ -33,4 +43,12 @@ class Users extends Component {
   }
 }
 
-export default Users;
+const mapStateToProps = (state) => {
+  return {
+    //key: value
+    listUser: state.userReducer.listUser,
+    keyword: state.userReducer.keyword,
+  }
+}
+
+export default connect(mapStateToProps,null)(Users);
