@@ -3,6 +3,7 @@ import Search from "./Search";
 import Users from "./Users";
 import Modal from "./Modal";
 import {connect} from "react-redux"
+import {actEditUSer} from "./../redux/actions"
 
 class UsermanagementRedux extends Component {
   render() {
@@ -32,11 +33,7 @@ class UsermanagementRedux extends Component {
 const mapDispatchToProps = (dispatch) =>{
   return{
     resetUserEdit: () =>{
-      const action ={
-      type: "EDIT_USER",
-      payload: null,
-      };
-      dispatch(action)  
+      dispatch(actEditUSer(null))  
     }
   }
 };
