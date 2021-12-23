@@ -13,9 +13,10 @@ import './App.css';
 // import LiftingStateUpCart from './shopping-cart'
 // import Home from './btvn-user-management';
 // import UsermanagementRedux from './btvn-user-management-redux';
-import BaiTapOanXuXi from "./baiTapRedux/baiTapOanXuXi/BaiTapOanXuXi";
+// import BaiTapOanXuXi from "./baiTapRedux/baiTapOanXuXi/BaiTapOanXuXi";
 // import FormValidation from './form-validation';
-// import LifeCycle from './lifeCycle';
+import LifeCycle from './lifeCycle';
+
 function App() {
   return (
     <div>
@@ -38,9 +39,9 @@ function App() {
       {/* <LiftingStateUpCart/> */}
       {/* <Home/> */}
       {/* <UsermanagementRedux/> */}
-      <BaiTapOanXuXi/>
+      {/* <BaiTapOanXuXi/> */}
       {/* <FormValidation/> */}
-      {/* <LifeCycle/> */}
+      <LifeCycle/>
     </div>
   );
 }

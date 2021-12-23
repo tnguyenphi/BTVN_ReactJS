@@ -15,7 +15,11 @@ class Computer extends Component {
                 {keyframe}
                 </style>
                 <div className='theThink' style={{position:'relative'}}>
-                    <img style={{position:'absolute',left:'-6%', animation:`randomItem${Date.now()} 0.5s`, transform: 'rotate(120deg)'}}
+                    <img style={{
+                        position:'absolute',
+                        left:'-6%', 
+                        animation:`randomItem${Date.now()} 0.5s`, 
+                        transform: 'rotate(120deg)'}}
                         className='mt-3' width={100} height={100}
                         src={this.props.computer.hinhAnh}
                         alt={this.props.computer.hinhAnh} />
