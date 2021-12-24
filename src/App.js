@@ -15,7 +15,8 @@ import './App.css';
 // import UsermanagementRedux from './btvn-user-management-redux';
 // import BaiTapOanXuXi from "./baiTapRedux/baiTapOanXuXi/BaiTapOanXuXi";
 // import FormValidation from './form-validation';
-import LifeCycle from './lifeCycle';
+// import LifeCycle from './lifeCycle';
+import BaiTapBookingTicket from "./baiTapRedux/BaiTapBookingTicket/BaiTapBookingTicket"
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       {/* <UsermanagementRedux/> */}
       {/* <BaiTapOanXuXi/> */}
       {/* <FormValidation/> */}
-      <LifeCycle/>
+      {/* <LifeCycle/> */}
+      <BaiTapBookingTicket/>
     </div>
   );
 }
